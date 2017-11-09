@@ -40,6 +40,7 @@ public class TabuSearch {
             
             if (neighborUtility > bestSolutionUtility){
                 bestSolution = neighbor.clone();
+                bestSolutionUtility = neighborUtility;
                 iterationsUntilChange = iterations;
             }
         }
